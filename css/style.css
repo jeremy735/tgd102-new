@@ -7,6 +7,10 @@ body {
 
 }
 
+a {
+	color: black;
+}
+
 .container_header {
 	background-color: white;
 	position: sticky;
@@ -626,6 +630,10 @@ h1 {
 	text-decoration: none;
 
 }
+.product-set li p {
+	color: #0082FB;
+}
+
 
 .product-set img {
 	width: 100%;
