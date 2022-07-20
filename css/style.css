@@ -51,10 +51,12 @@ a {
 	text-align: center;
 	text-decoration: none;
 	font-size: 24px;
+	transition: all 0.5s;
 
 }
 .top li a:hover{
-	
+	transform: scale(1.2);
+
 }
 
 /* ------------產品下拉是選單------------- */
@@ -585,6 +587,17 @@ h1 {
 	font-size: 24px;
 	margin-bottom: 10px;
 }
+
+.product-card{
+	transition: .3s;
+
+}
+
+.product-card:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 6px 6px 1px #77adff40;
+}
+
 .search {
 	width: 80px;
 }
@@ -626,6 +639,7 @@ h1 {
 .product-set img {
 	width: 100%;
 }
+
 
 .page-main {
 	width: 100%;
