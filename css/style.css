@@ -913,8 +913,8 @@ textarea {
 
 .right-info-name {
 	border-bottom: 1px solid black;
-	width: 500px;
-	height: 285px;
+	width: 560px;
+	height: auto;
 }
 
 .right-info-name h2 {
@@ -924,6 +924,9 @@ textarea {
 	font-size: 24px;
 	line-height: 35px;
 	margin-bottom: 10px;
+}
+.info-dt1 li{
+	line-height: 40px;
 }
 
 .bi-star-fill::before{
@@ -965,6 +968,7 @@ textarea {
 
 .add {
 	width: 100px;
+	margin-bottom: 10px;
 }
 
 .add a {
