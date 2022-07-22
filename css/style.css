@@ -51,11 +51,13 @@ a {
 	text-align: center;
 	text-decoration: none;
 	font-size: 24px;
-	transition: all 0.5s;
+	
 
 }
-.top li a:hover{
-	transform: scale(1.2);
+.header-left li a:hover{
+	
+	color: white;
+	background-color:#00a9e0;
 
 }
 
@@ -597,14 +599,25 @@ h1 {
 	margin-bottom: 10px;
 }
 
+
+/* --------------    圖片點擊放大效果----------------- */
+
+
 .product-card{
-	transition: .3s;
+	overflow: hidden;
 
 }
 
-.product-card:hover{
+.product-card img{
+	transition: 0.6s;
+	
+	
+
+}
+
+.product-card img:hover{
 	transform: scale(1.1);
-	box-shadow: 0px 6px 6px 1px #77adff40;
+	
 }
 
 .search {
