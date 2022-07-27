@@ -16,54 +16,71 @@
 
 <body>
 
-    <div class="container_header">
+    <nav class="header">
 
 
         <!--------------    logo 圖片  ------------  -->
 
-        <div class="top">
+        <div class="header-wrapper">
 
-            <a href="index.html">
-                <img src="img/logo1.png" alt="">
+            <a class="logo-a" href="index.html">
+                <img class="logo" src="img/logo1.png" alt="">
             </a>
 
             <!----------  主選單----------    -->
 
-            <div class="header-left">
-                <ul>
-                    <li><a href="promo.html">優惠活動</a></li>
-
-                    <li><a href="product.html">找產品</a></li>
-
-                    <li><a href="info.html">購物說明</a></li>
-
-                    <li><a href="location.html">聯絡我們</a></li>
-                </ul>
+            <div class="hamBar_wrapper">
+                <a class="hamBar" href="#">
+                    <i class="bi bi-list"></i>
+                </a>
             </div>
-            <!-------------- 主選單右邊icons------------ -->
 
-            <div class="header-right">
-                <ul>
-                    <li>
-                        <a href="#" class="btn-default">
-                            <i class="bi bi-search"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-default">
-                            <i class="bi bi-cart"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-default">
-                            <i class="bi bi-person"></i>
-                        </a>
-                    </li>
+            <section class="nav">
+
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="promo.html">優惠活動</a></li>
+
+                    <li class="nav-item"><a href="product.html">找產品</a></li>
+
+                    <li class="nav-item"><a href="info.html">購物說明</a></li>
+
+                    <li class="nav-item"><a href="location.html">聯絡我們</a></li>
+
+                        <ul class="top-icon">
+                            <li>
+                                <a href="#" class="btn-default">
+                                <i class="bi bi-search"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="btn-default">
+                                <i class="bi bi-cart"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="btn-default">
+                                <i class="bi bi-person"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+
+
                 </ul>
-            </div>
+            
+        
+
+
+            </section>
+
+            
+  
+            
 
         </div>
-    </div>
+    </nav>
 
     <!---------------banner看板 ---------------->
 
@@ -652,6 +669,7 @@
 
     </footer>
 
+    <script src="js/rwd.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
