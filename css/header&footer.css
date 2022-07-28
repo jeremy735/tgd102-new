@@ -1,0 +1,391 @@
+
+.header{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+	z-index: 2;
+	box-shadow: 0 0.25rem 0.75rem rgba(2, 32, 56, 0.24);
+}
+
+.header-wrapper{
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.logo-a{
+	display: block;
+	width: 90px;
+	margin-left: 50px;
+}
+.logo{
+	width: 150%;
+	margin-top: 35px;
+}
+
+/* 
+img{
+	display: block;
+	width: 100%;
+} */
+
+.nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 330px;
+	margin-top: 25px;
+}
+.nav-ul{
+	display: flex;
+}
+.nav-ul li{
+	margin: 0 20px;
+}
+
+.nav li a{
+	font-size: 20px;
+
+}
+
+.nav-item{
+
+	position: relative;
+}
+
+
+
+/* .nav-item:hover.nav-item::after{
+    width: 100%;
+} */
+
+.nav a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+	transition: color .4s ease-in;
+    position: relative;
+    font-size: 20px;
+}
+
+.nav a:hover{
+    color:#00a9e0;
+}
+
+/* .nav-item:hover .second_nav{
+    display: block;
+} */
+
+
+.top-icon{
+    display: flex;
+}
+.top-icon{
+    margin-left: 30px;
+}
+.top-icon a{
+    color:#0078E9;
+}
+
+.top-icon a:hover{
+    color: #00a9e0;
+}
+
+.hamBar_wrapper{
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamBar{
+    display: block;
+    color:#0082FB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------右上3個ICON 修改------------- */
+.btn-default {
+	display: inline-block;
+	color: #0082FB;
+}
+
+
+/* -----------footer-------------- */
+
+.container_footer {
+	background-color: #0082FB;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+
+}
+
+.footer-area {
+	width: 1400px;
+	margin: 0 auto;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.info-right ul {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+
+.logo-container ul {
+	line-height: 2;
+
+}
+
+.logo-container img {
+	margin-bottom: 30px;
+	height: 60px;
+}
+
+.logo-container li {}
+
+.container_footer .logo-container a {
+	color: white;
+	font-size: 16px;
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	margin-left: 10px;
+	text-decoration: none;
+
+}
+
+
+
+/* ---------------footer-icon修改--------- */
+.btn1 i {
+	display: block;
+	color: white;
+
+}
+
+.btn1>::before {
+	margin-right: 5px;
+}
+
+
+/* ---------------關於我們-icon修改--------- */
+.btn2 {
+	display: flex;
+
+
+}
+
+.btn2 h3 {
+	margin-left: 10px;
+}
+
+.info-right img {
+	width: 140px;
+	margin-top: 20px;
+}
+
+.info-right ul {
+	display: flex;
+	margin-top: 45px;
+
+}
+
+.info-right li {
+	margin-right: 40px;
+}
+
+.info-right li a {
+	text-decoration: none;
+
+}
+
+
+.info-right li h2 {
+	color: white;
+	font-size: 24px;
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	border-bottom: 1px solid white;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+.info-right li h3 {
+	color: white;
+	font-size: 16px;
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	margin: 5px auto;
+}
+
+.ref {
+	background-color: #092C4C;
+	text-align: center;
+	padding: 0.75rem 0;
+}
+
+.ref p {
+	color: white;
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-size: 12px;
+
+}
+
+
+
+
+
+/* ------------media--------- */
+
+
+@media screen and (max-width: 415px){
+
+	.header{
+        max-width: 414px;
+        width: 100%;
+        position: sticky;
+		top: 0px;
+		z-index: 1000;
+        height: 65px;
+		background-color: rgba(255, 255, 255, 0.9);
+    }
+	.header-wrapper{
+        max-width: 414px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+		
+    }
+
+	.logo-a{
+        width: 50px;
+    }
+
+    .logo{
+        margin-top: 22px;
+    }
+
+	.hamBar_wrapper{
+        display: block;
+        max-width: 20px;
+        align-items: center;
+        padding-right: 20px;
+        padding-top: 20px;
+    } 
+
+	.nav{
+        /* display: none; */
+        display: flex;
+        opacity: 0;
+        margin: auto;
+        position: absolute;
+        top: 65px;
+        width: 100%;
+        background-color:#0082FB;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in;
+    }
+
+	.nav_show{
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+		pointer-events: auto;
+    }
+	.nav-ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+	.nav li a{
+        font-size: 15px;
+		color: #FFFFFF;
+    }
+
+
+    .top-icon{
+        margin: auto;
+    }
+
+	.nav-item::after{
+        display: none;
+    }
+
+
+
+
+/* ------------footer--------- */
+
+.footer-area{
+	width: 100%;
+	flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo-container{
+	width: 100%;
+	font-size: 20px;
+	
+}
+
+
+.info-right {
+	width: 100%;
+	
+}
+
+
+.info-right ul{
+	flex-direction: column;
+	
+}
+
+
+.info-right li h2 {
+	font-size: 30px;
+}
+
+
+.info-right li h3{
+	font-size: 20px;
+}
+
+.ref{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+	
+}

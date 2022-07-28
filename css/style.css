@@ -5,11 +5,23 @@ body {
 	line-height: 1.6;
 	background-color: #f6f6f6;
 }
-a {
-	color: black;
+
+h1 {
+	font-family: 'Noto Sans TC', sans-serif;
+	font-style: normal;
+	font-size: 36px;
+	text-align: center;
+	margin: 50px auto;
+
 }
 
-.header{
+
+/* a {
+	color: black;
+} */
+/*          頭       */
+
+/* .header{
 	width: 100%;
 	height: 100px;
 	background-color: white;
@@ -43,7 +55,7 @@ img{
 	width: 100%;
 } */
 
-.nav{
+/* .nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -65,7 +77,7 @@ img{
 .nav-item{
 
 	position: relative;
-}
+} */
 
 
 
@@ -73,7 +85,7 @@ img{
     width: 100%;
 } */
 
-.nav a{
+/* .nav a{
     display: block;
     text-align: center;
     line-height: 50px;
@@ -86,14 +98,14 @@ img{
 
 .nav a:hover{
     color:#00a9e0;
-}
+} */
 
-.nav-item:hover .second_nav{
+/* .nav-item:hover .second_nav{
     display: block;
-}
+} */
 
 
-.top-icon{
+/* .top-icon{
     display: flex;
 }
 .top-icon{
@@ -118,24 +130,24 @@ img{
 .hamBar{
     display: block;
     color:#0082FB;
-}
+} */ 
 
 
 
 /* ------------banner 倫播圖------------- */
-.owl-carousel {}
+/* .owl-carousel {}
 
 
 
 
-
+ */
 
 
 /* ------------右上3個ICON 修改------------- */
-.btn-default {
+/* .btn-default {
 	display: inline-block;
 	color: #0082FB;
-}
+} */
 
 /*  -------------- banner主圖   --------  */
 .wrapper a img {
@@ -145,14 +157,7 @@ img{
 }
 
 
-h1 {
-	font-family: 'Noto Sans TC', sans-serif;
-	font-style: normal;
-	font-size: 36px;
-	text-align: center;
-	margin: 50px auto;
 
-}
 
 /* -------  main 中間內文區域 -------   */
 
@@ -191,6 +196,16 @@ h1 {
 	width: 100%;
 
 }
+/* -------  優惠活動 rwd  -------   */
+
+@media screen and (max-width: 415px){
+
+.promo-banner{
+	width: 100%;
+}
+
+}
+
 
 
 /* -------  新品上市  -------   */
@@ -234,19 +249,22 @@ h1 {
 	margin: 0 auto;
 	font-size: 24px;
 }
+
+
 /*  -----------  熱賣商品grid -----------  */
 
 .wrapper-best{
-	width: 1400px;
+	max-width: 1400px;
 	margin: 0 auto;
 	background-color: white;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	
-
+	
 }
 .wrapper-best > div{
+	width: 100%;
 	display: flex;
 	text-align: center;
 	justify-content: center;
@@ -301,27 +319,27 @@ h1 {
 }
 
 .item.item-small img{
-	width: 50px;
+	width: 50%;
+	margin-bottom: 1rem;
 	
 }
 
 .item.item-text h2{
-	font-size: 24px ;
+	font-size: 1.5rem ;
 	margin: auto;
-
-	line-height: 70px;
+	line-height: 4rem;;
 
 }
 .item.item-alink a{
 	margin: auto;
-	font-size: 24px;
+	font-size: 1.4rem;
 	display: block;
-	width: 150px;
+	width: 50%;
 	background-color: #0082FB;
 	color: aliceblue;
 	border-radius: 40px;
 	text-decoration: none;
-	line-height: 50px;
+	line-height: 3rem;
 }
 
 /* ---------------熱賣商品按鈕變色--------- */
@@ -333,18 +351,15 @@ h1 {
 
 .item a{
 	
-	font-size: 20px;
-	line-height: 50px;
+	font-size: 1.3rem;
+	line-height: 3rem;
 	text-decoration: none;
-	
-	
 	
 }
 
 .item{
 	text-align: center;
 	overflow: hidden;
-	
 	
 }
 
@@ -450,6 +465,31 @@ h1 {
 	border: 1px solid #D9D9D9;
 
 }
+
+
+/*  -----------  熱賣商品 RWD-----------  */
+
+@media screen and (max-width: 415px){
+
+.wrapper-best{
+	display: block;
+	
+	
+}
+
+.item.item-alink a{
+	margin-top: 1rem;
+	font-size: 1.8rem;
+}
+
+
+
+}
+
+
+
+
+
 
 
 
@@ -611,6 +651,7 @@ h1 {
 
 .video-control li {}
 
+/* -----------最右邊上拉室按鈕-------------- */
 
 .bi-arrow-up-circle {
 	font-size: 40px;
@@ -620,10 +661,32 @@ h1 {
 	bottom: 50px;
 }
 
+@media screen and (max-width: 415px){
+ .bi-arrow-up-circle{
+	display: none;
+ }
 
-/* -----------footer-------------- */
+}
 
-.container_footer {
+	
+
+
+/* -----------影片RWD區-------------- */
+@media screen and (max-width: 415px){
+
+.video-control{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+
+
+}
+
+/* -----------footer尾-------------- */
+
+/* .container_footer {
 	background-color: #0082FB;
 	margin: 0 auto;
 	height: 100%;
@@ -668,12 +731,12 @@ h1 {
 	margin-left: 10px;
 	text-decoration: none;
 
-}
+} */
 
 
 
 /* ---------------footer-icon修改--------- */
-.btn1 i {
+/* .btn1 i {
 	display: block;
 	color: white;
 
@@ -681,11 +744,11 @@ h1 {
 
 .btn1>::before {
 	margin-right: 5px;
-}
+} */
 
 
 /* ---------------關於我們-icon修改--------- */
-.btn2 {
+/* .btn2 {
 	display: flex;
 
 
@@ -746,7 +809,7 @@ h1 {
 	font-style: normal;
 	font-size: 12px;
 
-}
+} */
 
 /* ---------------優惠活動分頁--------- */
 .wrapper-promo {}
@@ -1144,6 +1207,7 @@ h1 {
 
 }
 
+
 .down-border1 {
 	width: 600px;
 	border-bottom: 1px solid black;
@@ -1475,7 +1539,7 @@ main .banner-product-bestSeller-middle a i {}
 
 /* ------------media--------- */
 
-@media screen and (max-width: 415px){
+/* @media screen and (max-width: 415px){
 
 	.header{
         max-width: 414px;
@@ -1511,7 +1575,7 @@ main .banner-product-bestSeller-middle a i {}
     } 
 
 	.nav{
-        /* display: none; */
+        display: none;
         display: flex;
         opacity: 0;
         margin: auto;
@@ -1523,7 +1587,7 @@ main .banner-product-bestSeller-middle a i {}
         transition: opacity 0.3s ease-in;
     }
 
-	.nav_show{
+	/* .nav_show{
         opacity: 1;
         transition: opacity 0.5s ease-in;
 		pointer-events: auto;
@@ -1552,74 +1616,127 @@ main .banner-product-bestSeller-middle a i {}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------footer--------- */
+
+/* .footer-area{
+	width: 100%;
+	flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
 }
+
+.logo-container{
+	width: 100%;
+	font-size: 20px;
+	
+}
+
+
+.info-right {
+	width: 100%;
+	
+}
+
+
+.info-right ul{
+	flex-direction: column;
+	
+}
+
+
+.info-right li h2 {
+	font-size: 30px;
+}
+
+
+.info-right li h3{
+	font-size: 20px;
+}
+
+.ref{
+	width: 100%;
+} */
+
+ 
+	
+/* } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
