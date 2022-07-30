@@ -112,15 +112,6 @@ img{
 
 
 
-
-
-
-
-
-
-
-
-
 /* ------------右上3個ICON 修改------------- */
 .btn-default {
 	display: inline-block;
@@ -135,6 +126,8 @@ img{
 	margin: 0 auto;
 	height: 100%;
 	width: 100%;
+	box-sizing: border-box;
+	
 
 }
 
@@ -293,7 +286,7 @@ img{
         display: block;
         max-width: 20px;
         align-items: center;
-        padding-right: 20px;
+        padding-right: 36px;
         padding-top: 20px;
     } 
 
@@ -341,11 +334,17 @@ img{
 
 /* ------------footer--------- */
 
+.container_footer{
+	box-sizing: border-box;
+} 
+
 .footer-area{
 	width: 100%;
 	flex-direction: column;
     justify-content: center;
     margin-top: 20px;
+	box-sizing: border-box;
+    padding: 10px;
 }
 
 .logo-container{

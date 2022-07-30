@@ -5,54 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <title>location</title>
 </head>
 <body>
 
-    <div class="container_header">
-<!--            logo 圖片    -->
-        <div class="top">
-                
-            <a href="index.html">
-                <img src="img/logo1.png" alt="" >
+    <nav class="header">
+
+
+        <!--------------    logo 圖片  ------------  -->
+
+        <div class="header-wrapper">
+
+            <a class="logo-a" href="index.html">
+                <img class="logo" src="img/logo1.png" alt="">
             </a>
 
-    <!--            主選單    -->
-            <div class="header-left">       
-                <ul>
-                    <li><a href="promo.html">優惠活動</a></li>
-                    <li><a href="product.html">找產品</a></li>
-                    <li><a href="info.html">購物說明</a></li>
-                    <li><a href="location.html">聯絡我們</a></li>
-                </ul> 
-            </div>
-                <!--         主選單右邊icons    -->
-            <div class="header-right">
-                <ul> 
-                    <li>
-                        <a href="#" class="btn-default">
-                            <i class="bi bi-search"></i>  
-                        </a>   
-                    </li>
-                    <li>
-                        <a href="#" class="btn-default">
-                            <i class="bi bi-cart"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-default">
-                            <i class="bi bi-person"></i>
-                        </a>
-                    </li>
-                </ul> 
+            <!----------  主選單----------    -->
+
+            <div class="hamBar_wrapper">
+                <a class="hamBar" href="#">
+                    <i class="bi bi-list"></i>
+                </a>
             </div>
 
-        </div>   
-    </div>
+            <section class="nav">
+
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="promo.html">優惠活動</a></li>
+
+                    <li class="nav-item"><a href="product.html">找產品</a></li>
+
+                    <li class="nav-item"><a href="info.html">購物說明</a></li>
+
+                    <li class="nav-item"><a href="location.html">聯絡我們</a></li>
+
+                    <ul class="top-icon">
+                        <li>
+                            <a href="#" class="btn-default">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="btn-default">
+                                <i class="bi bi-cart"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="btn-default">
+                                <i class="bi bi-person"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </ul>
+            </section>
+        </div>
+    </nav>
 
     
-    
+       <!--    info 內文區 -->
 
     <div class="loc-main">
 
@@ -66,7 +81,7 @@
 
         <div class="map-top">
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7229.074952921241!2d121.53923692681651!3d25.04976592368115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe6b0446815%3A0xf006dde8c27afcc7!2z57ev6IKyVGliYU1l6ZmE6Kit5Y-w5YyX6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1657946416670!5m2!1szh-TW!2stw" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7229.074952921241!2d121.53923692681651!3d25.04976592368115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe6b0446815%3A0xf006dde8c27afcc7!2z57ev6IKyVGliYU1l6ZmE6Kit5Y-w5YyX6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1657946416670!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
 
@@ -74,7 +89,7 @@
 
         <div class="info-down">
 
-            <div class="info-downleft">
+            <form class="info-downleft">
                 <ul>
                     <li>
                         <div class="down-border">
@@ -84,27 +99,25 @@
                         
                     </li>
                     <li>
-                        <h3>姓名*</h3>
-                        <input type="text"  >
+                        <label for="name" >姓名*</label>
+                        <input type="text" id="name" placeholder="請留下您的大名" >
                     </li>
                     <li>
-                        <h3>Email*</h3>
-                        <input type="text" id="mail"  >
+                        <label for="mail">Email*</label>
+                        <input type="text" id="mail" placeholder="easy3cshop@hotmail.com@mail.com" >
                     </li>
                     <li>
-                        <h3>留言*</h3>
-                        <textarea name="texteara" id="" cols="30" rows="10"></textarea>
+                        <label for="texteara">留言*</label>
+                        <textarea name="texteara" id="texteara" cols="30" rows="10"></textarea>
 
                     </li>
                     <li>
-                        <a href="#">送出</a>
+                        <input class="submit btn-b" type="submit" value="送出">
                     </li>
                 
                 </ul>
 
-
-
-            </div>
+            </form>
             <div class="info-downright">
 
 
@@ -152,7 +165,7 @@
             <div class="logo-container">
 
 
-                <img src="img/logo2.png" alt="">
+                <img  class="footer_logo" src="img/logo2.png" alt="">
 
                 <ul>
 
@@ -178,7 +191,7 @@
                 </ul>
 
             </div>
-        <!--  ----------footer 右邊info區 ----------   -->
+            <!--  ----------footer 右邊info區 ----------   -->
 
             <div class="info-right">
 
@@ -217,11 +230,10 @@
         </div>
 
 
-
-
     </div>
-        
+
 </footer>
+<script src="js/rwd.js"></script>
 
 
     

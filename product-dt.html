@@ -6,52 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <title>product-dt</title>
 </head>
 
 <body>
 
-    <div class="container_header">
-        <!--            logo 圖片    -->
-        <div class="top">
+    <nav class="header">
 
-            <a href="index.html">
-                <img src="img/logo1.png" alt="">
+
+        <!--------------    logo 圖片  ------------  -->
+
+        <div class="header-wrapper">
+
+            <a class="logo-a" href="index.html">
+                <img class="logo" src="img/logo1.png" alt="">
             </a>
 
-            <!--            主選單    -->
-            <div class="header-left">
-                <ul>
-                    <li><a href="promo.html">優惠活動</a></li>
-                    <li><a href="product.html">找產品</a></li>
-                    <li><a href="info.html">購物說明</a></li>
-                    <li><a href="location.html">聯絡我們</a></li>
-                </ul>
-            </div>
-            <!--         主選單右邊icons    -->
-            <div class="header-right">
-                <ul>
-                    <li>
-                        <a href="#" class="btn-default">
-                            <i class="bi bi-search"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-default">
-                            <i class="bi bi-cart"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-default">
-                            <i class="bi bi-person"></i>
-                        </a>
-                    </li>
-                </ul>
+            <!----------  主選單----------    -->
+
+            <div class="hamBar_wrapper">
+                <a class="hamBar" href="#">
+                    <i class="bi bi-list"></i>
+                </a>
             </div>
 
+            <section class="nav">
+
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="promo.html">優惠活動</a></li>
+
+                    <li class="nav-item"><a href="product.html">找產品</a></li>
+
+                    <li class="nav-item"><a href="info.html">購物說明</a></li>
+
+                    <li class="nav-item"><a href="location.html">聯絡我們</a></li>
+
+                    <ul class="top-icon">
+                        <li>
+                            <a href="#" class="btn-default">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="btn-default">
+                                <i class="bi bi-cart"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="btn-default">
+                                <i class="bi bi-person"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </ul>
+            </section>
         </div>
-    </div>
+    </nav>
 
     <!--    banner看板     -->
 
@@ -76,7 +91,7 @@
 
                 <ul>
                     <li>
-                        <a class="small" href="#">
+                        <a class="small" >
 
                             <img src="img/pdinfo.jpg" alt="">
                         </a>
@@ -84,26 +99,25 @@
                     </li>
 
                     <li>
-                        <a class="small" href="#">
+                        <a class="small" >
 
                             <img src="img/small2.png" alt="">
                         </a>
                 
                     </li>
                     <li>
-                        <a class="small" href="#">
+                        <a class="small" >
                             <img src="img/small3.png" alt="">
                         </a>
 
                     </li>
                     <li>
-                        <a class="small" href="#">
+                        <a class="small" >
                             <img src="img/small4.png" alt="">
                         </a>
 
                     </li>
                  
-
                 </ul>
 
             </div>
@@ -132,44 +146,53 @@
 
                     </ul>
 
-                    <div class="buttom-1">
+                    <form action="">
 
-                        <a href="">晨曦白</a>
-                        <a href="">午夜黑</a>
+                        <!-- ----------  購物車顏色選項 ----------   -->
 
-                    </div>
+                        <div id="radio">
+                            <span>顏色</span>
+                            <label><input type="radio" name="label" value="台劇" checked="checked"><span class="round button">晨曦白</span></label>
+                            <label><input type="radio" name="label" value="古裝劇"><span class="round button">星燦藍</span></label>
+                            <label><input type="radio" name="label" value="陸劇"><span class="round button">晨曦粉</span></label>
+                        
+                        </div>
 
-                    <div class="add">
+                        <!-- ----------  購物車數量加減 ----------   -->
 
-                        <a href="#">-</a>
-                        <span>1</span>
-                        <a href="#">+</a>
+                        <ul class="btn-numbox">
+                            <li><span class="number">數量</span></li>
+                            <li>
+                                <ul class="count">
+                                    <li><span id="num-jian" class="num-jian">-</span></li>
+                                    <li><input type="text" class="input-num" id="input-num" value="0" /></li>
+                                    <li><span id="num-jia" class="num-jia">+</span></li>
+                                </ul>
+                            </li>
+                        </ul>
 
-                    </div>
+                        <div class="bottom-2">
+                            <ul>
+                                <li>
+                                    <a class="buy-button" href="#">
+                                        <i class="bi bi-credit-card-2-back"></i>
+                                        立即購買
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="add-cartbutton" href="#">
+                                        <i class="bi bi-heart"></i>
+                                        加入購物車
+                                    </a>
+        
+                                </li>
+                            </ul>
+        
+                        </div>
 
+                    </form>
+            
                 </div>
-
-                <div class="bottom-2">
-                    <ul>
-                        <li>
-                            <a class="buy-button" href="#">
-                                <i class="bi bi-credit-card-2-back"></i>
-                                立即購買
-                            </a>
-
-                        </li>
-                        <li>
-
-                            <a class="add-cartbutton" href="#">
-                                <i class="bi bi-heart"></i>
-                                加入購物車
-                            </a>
-
-                        </li>
-                    </ul>
-
-                </div>
-
             </div>
 
         </div>
@@ -281,48 +304,46 @@
 
 
 
-
-
     <!--          footer區    -->
     <footer>
         <div class="container_footer">
             <div class="footer-area">
-
+    
                 <!-- ----------  footer 左邊logo區 ----------   -->
-
+    
                 <div class="logo-container">
-
-
-                    <img src="img/logo2.png" alt="">
-
+    
+    
+                    <img  class="footer_logo" src="img/logo2.png" alt="">
+    
                     <ul>
-
+    
                         <li class="btn1">
                             <i class="bi bi-whatsapp">
                                 +886-905242197
                             </i>
-
+    
                         </li>
                         <li class="btn1">
                             <i class="bi bi-envelope">
                                 easy3cshop@hotmail.com
                             </i>
-
+    
                         </li>
-
+    
                         <li class="btn1">
                             <i class="bi bi-geo-alt">
                                 9F., No. 46, Fuxing Rd., Zhongli Dist.,Taoyuan City 320061, Taiwan (R.O.C.)
                             </i>
-
+    
                         </li>
                     </ul>
-
+    
                 </div>
-            <!--  ----------footer 右邊info區 ----------   -->
-
+                <!--  ----------footer 右邊info區 ----------   -->
+    
                 <div class="info-right">
-
+    
                     <ul>
                         <li>
                             <h2>關於我們</h2>
@@ -333,7 +354,7 @@
                             <a href="location.html">
                                 <h3>聯絡我們</h3>
                             </a>
-
+    
                         </li>
                         <li>
                             <h2>線上客服</h2>
@@ -341,33 +362,32 @@
                             <h3>週一至週日 9:00 - 17:30</h3>
                             <h3>午休時間 12:00 - 14:00</h3>
                         </li>
-
-
+    
+    
                         <img src="img/icon/qrcode1.svg" alt="">
                     </ul>
                 </div>
             </div>
-
+    
             <div class="ref">
-
+    
                 <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br>
                     若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>
                     COPYRIGHT © 2022 EZ3C Co.,Ltd. All rights reserved.
                 </p>
-
+    
             </div>
-
-
-
-
+    
+    
         </div>
-            
+    
     </footer>
+    <script src="js/rwd.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script>
-
+        
         // var acc = document.getElementsByClassName("accordion");
         // var i;
 
@@ -383,12 +403,38 @@
         // });
         // }
 
-        jQuery(".small img").click(function () {
+        // 商品圖點擊換成大圖 jquery
+
+        jQuery(".small img" ).click(function () {
             jQuery(".big img").prop("src", jQuery(this).prop("src"));
         });
+        
 
 
+    </script>
+    <script>
 
+        //  購物車數量加減
+
+        var num_jia = document.getElementById("num-jia");
+        var num_jian = document.getElementById("num-jian");
+        var input_num = document.getElementById("input-num");
+
+        num_jia.onclick = function() {
+
+            input_num.value = parseInt(input_num.value) + 1;
+        }
+
+        num_jian.onclick = function() {
+
+            if(input_num.value <= 0) {
+                input_num.value = 0;
+            } else {
+
+                input_num.value = parseInt(input_num.value) - 1;
+            }
+
+        }
     </script>
 </body>
 

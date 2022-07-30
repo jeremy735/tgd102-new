@@ -56,7 +56,16 @@
 
 .owl-carousel .owl-item img {
     display: block;
-    width: 100%
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 415px){
+
+	.owl-carousel .owl-item img {
+    height: 250px;
+	
+    }
 }
 
 .owl-carousel .owl-dots.disabled,
