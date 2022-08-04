@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header&footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <title>promo</title>
 </head>
@@ -43,28 +44,34 @@
 
                     <li class="nav-item"><a href="location.html">聯絡我們</a></li>
 
-                    <ul class="top-icon">
-                        <li>
-                            <a href="#" class="btn-default">
-                                <i class="bi bi-search"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="btn-default">
-                                <i class="bi bi-cart"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="btn-default">
-                                <i class="bi bi-person"></i>
-                            </a>
-                        </li>
-                    </ul>
-
+                   
                 </ul>
             </section>
+
+            <!---------------three icon ---------------->
+            <ul class="hn-function flex-cc">
+                <li class="hn-search">
+                    <form action="#" class="desktop-search">
+                        <input type="text"  placeholder="找商品" name="search">
+                        <button type="submit">
+                            <i class="bi bi-search "></i>
+                        </button>
+                    </form>
+                    
+                </li>
+
+                <li>
+                    <a href="#" class="btn-default">
+                    <i class="bi bi-cart"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="btn-default">
+                    <i class="bi bi-person"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -82,7 +89,7 @@
 
 
 
-    <div class="promo-main">
+    <div class="promo-main" >
 
 
         <div class="promo-in">
@@ -95,7 +102,7 @@
 
             </div>
 
-            <ul>
+            <ul data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
 
                 <li class="product-card">
                     <img src="img/prs1.jpg" alt="">
@@ -222,6 +229,10 @@
 
     </footer>
     <script src="js/rwd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 
 

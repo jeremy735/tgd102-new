@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+
     <title>Home</title>
 </head>
 
-<body>
+<body >
 
     <nav class="header">
 
@@ -41,44 +43,65 @@
                 <ul class="nav-ul">
                     <li class="nav-item"><a href="promo.html">優惠活動</a></li>
 
-                    <li class="nav-item"><a href="product.html">找產品</a></li>
+                    <li class="nav-item">
+                        <a href="product.html">找產品</a>
+                        <div class="hn-list-item hn-list-model">
+
+                            <ul class="hn-list-model-item">
+                                <li>
+                                    <a href="product.html">藍芽耳機</a>
+
+                                </li>
+                                <li>
+                                    <a href="product.html">藍芽喇叭</a>
+
+                                </li>
+                                <li>
+                                    <a href="product.html">行動電源</a>
+
+                                </li>
+                                <li>
+                                    <a href="product.html">周邊商品</a>
+
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </li>
 
                     <li class="nav-item"><a href="info.html">購物說明</a></li>
 
                     <li class="nav-item"><a href="location.html">聯絡我們</a></li>
 
-                        <ul class="top-icon">
-                            <li>
-                                <a href="#" class="btn-default">
-                                <i class="bi bi-search"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="btn-default">
-                                <i class="bi bi-cart"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="btn-default">
-                                <i class="bi bi-person"></i>
-                                </a>
-                            </li>
-                        </ul>
-
-
-
                 </ul>
-            
-        
-
-
+                
             </section>
 
-            
-  
-            
+              <!---------------three icon ---------------->
+            <ul class="hn-function flex-cc">
+                <li class="hn-search">
+                    <form action="#" class="desktop-search">
+                        <input type="text"  placeholder="找商品" name="search">
+                        <button type="submit">
+                            <i class="bi bi-search "></i>
+                        </button>
+                    </form>
+                    
+                </li>
+
+                <li>
+                    <a href="#" class="btn-default">
+                    <i class="bi bi-cart"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="btn-default">
+                    <i class="bi bi-person"></i>
+                    </a>
+                </li>
+            </ul>
 
         </div>
     </nav>
@@ -108,16 +131,16 @@
 
         <h1>優惠活動</h1>
         <!-- ------ -------- 優惠活動圖片 --------   -->
-        <section class="promo-banner">
-            <div class="promo-right">
+        <section class="promo-banner " data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
+            <div class="promo-right" >
                 <a href="promo.html">
-                    <img src="img/dis1.jpg" alt="">
+                    <img src="img/dis1.jpg" alt="" >
                 </a>
             </div>
 
             <div class="promo-left">
                 <a href="promo.html">
-                    <img src="img/dis2.jpg" alt="">
+                    <img src="img/dis2.jpg" alt="" >
                 </a>
 
             </div>
@@ -126,17 +149,17 @@
         <!-- ---------- 新品上市活動圖片---------- -->
         <h1>新品上市</h1>
 
-        <section class="new-arrival">
+        <section class="new-arrival" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
 
-            <div class="banner-bestSeller">
+            <div class="banner-bestSeller" >
 
-                <ul class="banner-product-bestSeller">
+                <ul class="banner-product-bestSeller" >
 
-
+                
                     <li class="banner-product-bestSeller-one">
-                        <img src="img/new1.jpg" alt="">
-                        <h3>Beats Studio3 Wireless 頭戴式耳機</h3>
-                        <p>NT$11800</p>
+                        <img src="img/new1.png" alt="" >
+                        <h3>Turtle Beach Stealth 600 Gen 2</h3>
+                        <p>NT$3380</p>
                         <a class="newproduct-button" href="product-dt.html">立即搶購</a>
                         <div class="banner-product-bestSeller-middle">
                             <a href="product-dt.html">
@@ -148,9 +171,9 @@
                         </div>
                     </li>
                     <li class="banner-product-bestSeller-one">
-                        <img src="img/new2.jpg" alt="">
-                        <h3>Beats Solo3 Wireless 頭戴式耳機</h3>
-                        <p>NT$8200</p>
+                        <img src="img/new2.png" alt="" >
+                        <h3>AUKEY Basix Pro Mini PD快充 行動電源</h3>
+                        <p>NT$1380</p>
                         <a class="newproduct-button" href="product-dt.html">立即搶購</a>
                         <div class="banner-product-bestSeller-middle">
                             <a href="product-dt.html">
@@ -162,9 +185,9 @@
                         </div>
                     </li>
                     <li class="banner-product-bestSeller-one">
-                        <img src="img/new3.jpg" alt="">
-                        <h3>環繞音效耳機麥克風</h3>
-                        <p>NT$6500</p>
+                        <img src="img/new3.png" alt="" >
+                        <h3>Turtle Beach Scout Air真無線藍牙耳機</h3>
+                        <p>NT$4200</p>
                         <a class="newproduct-button" href="product-dt.html">立即搶購</a>
                         <div class="banner-product-bestSeller-middle">
                             <a href="product-dt.html">
@@ -176,8 +199,8 @@
                         </div>
                     </li>
                     <li class="banner-product-bestSeller-one">
-                        <img src="img/new4.jpg" alt="">
-                        <h3>Sony WF-XB700</h3>
+                        <img src="img/new4.png" alt="" >
+                        <h3>AUKEY Omnia Mix 65W PD快充充電器</h3>
                         <p>NT$4500</p>
                         <a class="newproduct-button" href="product-dt.html">立即搶購</a>
                         <div class="banner-product-bestSeller-middle">
@@ -199,7 +222,7 @@
 
         <!----------- 上方熱賣區---------- -->
 
-        <div class="wrapper-best">
+        <div  class="wrapper-best" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="linear">
 
             <div class="item item1">
 
@@ -242,45 +265,45 @@
 
             <div class="item item5">
                 <a href="product-dt.html">
-                    <img src="img/pd1.png" alt="">
-                    <h3>藍芽喇叭<br>NT$2800</h3>
+                    <img src="img/bs1.png" alt="">
+                    <h3>Soundcore Select Pro 攜帶式防水藍牙喇叭<br>NT$2800</h3>
 
                 </a>
 
             </div>
             <div class="item item6">
                 <a href="product-dt.html">
-                    <img src="img/pd2.png" alt="">
-                    <h3>藍芽喇叭<br>NT$2800</h3>
+                    <img src="img/bs2.png" alt="">
+                    <h3>Tronsmart Element Force+防水藍牙喇叭<br>NT$2800</h3>
 
                 </a>
             </div>
 
             <div class="item item7">
                 <a href="product-dt.html">
-                    <img src="img/pd3.png" alt="">
-                    <h3>藍芽喇叭<br>NT$2800</h3>
+                    <img src="img/bs3.png" alt="">
+                    <h3>Tronsmart Element Groove防水藍牙喇叭<br>NT$2800</h3>
 
                 </a>
             </div>
             <div class="item item8">
                 <a href="product-dt.html">
-                    <img src="img/pd4.png" alt="">
-                    <h3>藍芽喇叭<br>NT$2800</h3>
+                    <img src="img/bs4.png" alt="">
+                    <h3>OontZ Angle 3 防水藍牙喇叭<br>NT$2800</h3>
 
                 </a>
             </div>
             <div class="item item9">
                 <a href="product-dt.html">
-                    <img src="img/pd5.png" alt="">
-                    <h3>藍芽喇叭<br>NT$2800</h3>
+                    <img src="img/bs5.png" alt="">
+                    <h3>Monster Superstar S110 藍牙喇叭<br>NT$2800</h3>
 
                 </a>
             </div>
             <div class="item item10">
                 <a href="product-dt.html">
-                    <img src="img/pd6.png" alt="">
-                    <h3>藍芽喇叭<br>NT$2800</h3>
+                    <img src="img/bs6.png" alt="">
+                    <h3>Soundcore Boost 防水藍牙喇叭<br>NT$2800</h3>
 
                 </a>
             </div>
@@ -320,42 +343,42 @@
             <div class="item item15">
                 <a href="product-dt.html">
                     <img src="img/pd7.png" alt="">
-                    <h3>藍芽耳機<br>NT$2800</h3>
+                    <h3>Philips Fidelio T1主動降噪真無線藍牙耳機<br>NT$2800</h3>
                 </a>
 
             </div>
             <div class="item item16">
                 <a href="product-dt.html">
                     <img src="img/pd8.png" alt="">
-                    <h3>藍芽耳機<br>NT$2800</h3>
+                    <h3>Clarity 101 Plus Airlinks真無線藍牙耳機<br>NT$2800</h3>
 
                 </a>
             </div>
             <div class="item item17">
                 <a href="product-dt.html">
                     <img src="img/pd9.png" alt="">
-                    <h3>藍芽耳機<br>NT$2800</h3>
+                    <h3>Monster Clarity 8.0 ANC 主動降噪真無線藍牙耳機<br>NT$2800</h3>
 
                 </a>
             </div>
             <div class="item item18">
                 <a href="product-dt.html">
                     <img src="img/pd10.png" alt="">
-                    <h3>藍芽耳機<br>NT$2800</h3>
+                    <h3>Libratone Air+ 2 主動降噪真無線藍牙耳機<br>NT$2800</h3>
 
                 </a>
             </div>
             <div class="item item19">
                 <a href="product-dt.html">
                     <img src="img/pd11.png" alt="">
-                    <h3>藍芽耳機<br>NT$2800</h3>
+                    <h3>Libratone Air Color 真無線藍牙耳機<br>NT$2800</h3>
 
                 </a>
             </div>
             <div class="item item20">
                 <a href="product-dt.html">
                     <img src="img/pd12.png" alt="">
-                    <h3>藍芽耳機<br>NT$2800</h3>
+                    <h3>ROCCAT Syn Buds Air 真無線藍牙耳機<br>NT$2800</h3>
 
                 </a>
             </div>
@@ -367,7 +390,7 @@
         <!--  ---------- 推薦影片區  ----------  -->
 
 
-        <section class="video">
+        <section class="video" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear">
 
             <h1>推薦影片</h1>
 
@@ -404,11 +427,12 @@
 
         </section>
 
-        <!--  ---------- 右邊至頂icon   ----------  -->
-        <a href="#">
-            <i class="bi bi-arrow-up-circle"></i>
-        </a>
+       
+        <!---------------gotop--------------->
 
+        <button onClick="gotopfunction()" type="button" id="gotop">
+            <i class="bi bi-arrow-up-circle"></i>
+        </button>
     </main>
 
 
@@ -495,6 +519,11 @@
     <script src="js/rwd.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
     <script>
 
         //       banner  輪播
@@ -535,6 +564,16 @@
                 }
             }
         })
+
+
+        // 點擊回頂
+            $(document).ready(function () {
+                $(`#gotop`).click(function (e) {
+                    // e.preventDefault();
+                    $(`html,body`).animate({ scrollTop: 0 }, 900);
+                });
+            });
+
 
     </script>
 

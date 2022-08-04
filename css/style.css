@@ -63,13 +63,14 @@ h1 {
 }
 
 .promo-right img {
-	margin-bottom: 10px;
+	margin-left: -10px;
 	width: 100%;
 
 }
 
 .promo-left img {
 	width: 100%;
+	margin-left: 10px;
 
 }
 /* -------  優惠活動 rwd  -------   */
@@ -81,6 +82,18 @@ h1 {
 	display: flex;
     flex-direction: column;
 }
+
+.promo-right img {
+	margin: 0%;
+	margin-bottom: 10px;
+	
+}
+.promo-left img {
+	margin: 0%;
+	
+}
+
+
 
 }
 
@@ -138,11 +151,12 @@ h1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 5px;
 	
 	
 }
 .wrapper-best > div{
-	width: 100%;
+	
 	display: flex;
 	text-align: center;
 	justify-content: center;
@@ -160,14 +174,14 @@ h1 {
 	grid-column:  1 / 2;
 	grid-row: 2 / 3;
 	border-left: 1px solid #D9D9D9;
-	border-bottom: 1px solid #D9D9D9;
+	
 	
 }
 
 .item-small{
 	grid-column:  2 / 3;
 	grid-row: 1/ 2;
-	border-top: 1px solid #D9D9D9;
+	
 
 }
 .item-small ul{
@@ -208,6 +222,13 @@ h1 {
 	line-height: 4rem;;
 
 }
+.item h3{
+	font-size: 1rem ;
+	padding: 10px;
+	line-height: 1.6;
+}
+
+
 .item.item-alink a{
 	margin: auto;
 	font-size: 1.4rem;
@@ -240,7 +261,9 @@ h1 {
 	overflow: hidden;
 	
 }
-
+.item3{
+	border-top: 1px solid #D9D9D9;
+}
 
 .item4{
 	grid-column:  2 / 3;
@@ -350,7 +373,9 @@ h1 {
 @media screen and (max-width: 415px){
 
 .wrapper-best{
-	display: block;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
 		
 
 }
@@ -359,9 +384,90 @@ h1 {
 	margin-top: 1rem;
 	font-size: 1.8rem;
 }
+.wrapper-best > div{
+	
+}
 
+.item1{
+	width: 100%; 
+}
+.item2{
+	width: 56%;
+	border: none;
+}
+.item3{
+	width: 42%;
+	border: none;
 
+}
+.item4{
+	width: 100%;
+	padding: 20px;
+}
+.item5{
+	width: 48%;
 
+}
+.item6{
+	width: 48%;
+
+}
+.item7{
+	width: 48%;
+
+}
+.item8{
+	width: 48%;
+
+}
+.item9{
+	width: 48%;
+
+}
+.item10{
+	width: 48%;
+
+}
+.item11{
+	width: 100%;
+}
+.item12{
+	width: 56%;
+	border: none;
+}
+.item13{
+	width: 42%;
+	border: none;
+
+}
+.item14{
+	width: 100%;
+	padding: 20px;
+}
+.item15{
+	width: 48%;
+
+}
+.item16{
+	width: 48%;
+
+}
+.item17{
+
+	width: 48%;
+}
+.item18{
+	width: 48%;
+
+}
+.item19{
+
+	width: 48%;
+}
+.item20{
+	width: 48%;
+
+}
 }
 
 
@@ -527,8 +633,6 @@ h1 {
 
 /* ---------------找商品區大範圍 --------- */
 
-
-
 .product-container {
 
 	margin: 50px auto;
@@ -537,6 +641,20 @@ h1 {
 	width: 1400px;
 	justify-content: space-between;
 }
+
+/* ----------category-container---------- */
+
+.category-control {
+	
+  }
+  
+  .category-control select {
+	outline: none;
+	padding: 3px;
+	margin-right: 150px;
+  }
+
+
 
 .product-list {
 	display: flex;
@@ -580,6 +698,14 @@ h1 {
 .product-card {
 	overflow: hidden;
 }
+.product-card .bi-heart{
+	color: red;
+
+}
+.product-card .bi-credit-card-2-back{
+	color: black;
+
+}
 
 .product-card img {
 	transition: 0.6s;
@@ -621,6 +747,7 @@ h1 {
 
 .product-set li h3 {
 	margin: 5px 0;
+	color: black;
 }
 
 
@@ -672,8 +799,16 @@ h1 {
 		display: flex;
     	flex-direction: column;
 	}
+	.category-control{
+		padding: 0 17px;
+
+	}
+
 	.label-3{
 		margin-left: 18px;
+	}
+	.side-left{
+		display: none;
 	}
 	.product-list{
 		flex-direction: column;
@@ -690,9 +825,10 @@ h1 {
 	.product-set ul{
 		display: flex;
     	flex-wrap: wrap;
+		padding: 0 15px;
 	}
 	.product-set li{
-		width: 41%;
+		width: 100%;
 	}
 
 
@@ -766,6 +902,8 @@ h1 {
 @media screen and (max-width: 415px){
 	.info-set{
 		width: 100%;
+		box-sizing: border-box;
+    	padding: 10px;
 	}
 	.info-set ul{
 		padding: 0px 15px;
@@ -1211,7 +1349,7 @@ img {
 
 .banner-bestSeller ul {
 	display: flex;
-	justify-content: center;
+	
 }
 
 .banner-bestSeller li {
@@ -1307,7 +1445,7 @@ main .banner-product-bestSeller-middle a i {}
 }
 
 .banner-product-bestSeller li {
-	border: 1px solid #D9D9D9;
+	padding: 0 5px;
 	width: 250px;
 
 }
@@ -1388,15 +1526,7 @@ main .banner-product-bestSeller-middle a i {}
 		backface-visibility: hidden;
 	}
 	
-	
-	.banner-product-bestSeller-one:hover img{
-		opacity: 1;
-		background-color: black;
-	}
-	
-	.banner-product-bestSeller-one:hover .banner-product-bestSeller-middle{
-		opacity: 1;
-	}
+
 	
 	.banner-product-bestSeller-middle{
 		transition: .5s ease;
