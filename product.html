@@ -36,37 +36,93 @@
             <section class="nav">
 
                 <ul class="nav-ul">
+                    <div class="search-function">
+                        <i class="bi bi-search "></i>
+                        <input type="search" placeholder="搜尋EZ.3C.com" id="user-search">
+                    </div>
                     <li class="nav-item"><a href="promo.html">優惠活動</a></li>
 
-                    <li class="nav-item"><a href="product.html">找產品</a></li>
+                    <li class="nav-item">
 
-                    <li class="nav-item"><a href="info.html">購物說明</a></li>
+                        
+                        <a href="product.html">找產品</a>
+                        <div class="hn-list-item hn-list-model">
+
+                            <ul class="hn-list-model-item">
+                                <li>
+                                    <a href="product.html">藍芽耳機</a>
+
+                                </li>
+                                <li>
+                                    <a href="product.html">藍芽喇叭</a>
+
+                                </li>
+                                <li>
+                                    <a href="product.html">行動電源</a>
+
+                                </li>
+                                <li>
+                                    <a href="product.html">周邊商品</a>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="info.html">購物說明</a>
+                        <div class="hn-list-item hn-list-model">
+
+                            <ul class="hn-list-model-item">
+                                <li>
+                                    <a href="info.html">付費方式</a>
+
+                                </li>
+                                <li>
+                                    <a href="info.html">運送方式</a>
+
+                                </li>
+                                <li>
+                                    <a href="info.html">退換或方式</a>
+
+                                </li>
+                                <li>
+                                    <a href="info.html">會員權益</a>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </li>
 
                     <li class="nav-item"><a href="location.html">聯絡我們</a></li>
 
                 </ul>
+                
             </section>
-              <!---------------three icon ---------------->
+            <!---------------three icon ---------------->
             <ul class="hn-function flex-cc">
                 <li class="hn-search">
                     <form action="#" class="desktop-search">
-                        <input type="text"  placeholder="找商品" name="search">
+                        <input type="text" placeholder="找商品" name="search">
                         <button type="submit">
                             <i class="bi bi-search "></i>
                         </button>
                     </form>
-                    
+
                 </li>
 
                 <li>
                     <a href="#" class="btn-default">
-                    <i class="bi bi-cart"></i>
+                        <i class="bi bi-cart"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="btn-default">
-                    <i class="bi bi-person"></i>
+                    <a href="sign-in.html" class="btn-default">
+                        <i class="bi bi-person"></i>
                     </a>
                 </li>
             </ul>
@@ -74,6 +130,7 @@
     </nav>
 
     <!--    banner看板     -->
+    
     <div class="wrapper-promo">
 
         <div class="banner">
@@ -86,83 +143,69 @@
 
 
     <div class="product-container">
-        <div class="label-3">
+        <div class="pd-side">
             <a href="index.html">首頁</a>
-            <img src="img/icon/next.png" alt="">
+            <i class="bi bi-chevron-right"></i>
             <span>找產品</span>
 
         </div>
         <div class="category-control">
             <select>
-              <option value="suggest">推薦商品</option>
-              <option value="suggest">最新商品</option>
-              <option value="suggest">價格由低到高</option>
-              <option value="suggest">價格由高到低</option>
+                <option value="suggest">推薦商品</option>
+                <option value="suggest">最新商品</option>
+                <option value="suggest">價格由低到高</option>
+                <option value="suggest">價格由高到低</option>
             </select>
         </div>
 
 
 
-
         <div class="product-list" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
+            <!--    左邊選單文字列     -->
+
+            <ul class="category-list">
+                <li>
+                    <a href="#">
+                        <p>新品上市</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="category-links" href="#">藍芽耳機
+                        <i class="bi bi-plus"></i>
+                        <i class="bi bi-dash"></i>
+                    </a>
+                    <ul class="category-content">
+                        <li><a href="product.html">Soundcore Air 2 Pro </a></li>
+                        <li><a href="product.html">Soundcore Dot 2 NC</a></li>
+                        <li><a href="product.html">Soundcore Life P3 </a></li>
+                        <li><a href="product.html">EppFun Meet 250</a></li>
+                        <li><a href="product.html">Philips TAT2236 </a></li>
+                        <li><a href="product.html">Monster 101</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">藍芽喇叭<i class="fa fa-times"></i> </a>
+
+                </li>
+                <li>
+                    <a href="#">行動電源<i class="fa fa-times"></i> </a>
+                </li>
+                <li>
+                    <a href="#">精選配件<i class="fa fa-times"></i> </a>
+                </li>
+
+            </ul>
 
 
-            <div class="side-left">
-
-                <div class="side-pd">
-                    <div class="dropdown-list">
-                        <span class="show-all-dropdown">
-                            藍芽耳機
-                            <i class="bi bi-caret-down-fill"></i>
-                        </span>
-
-                        <ul>
-                            <li>
-                                <a href="product-dt.html">
-                                    <span class="no-chird">Libratone Air+ 2</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="product-dt.html">
-                                    <span class="no-chird">Libratone Air+ 2pro</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="product-dt.html">
-                                    <span class="no-chird">Libratone Air+ 3</span>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <div class="dropdown-list">
-                        <span class="show-all-dropdown">
-                            藍芽喇叭
-                            <i class="bi bi-caret-down-fill"></i>
-                        </span>
-
-                    </div>
-                    <div class="dropdown-list">
-                        <span class="show-all-dropdown">
-                            周邊商品
-                            <i class="bi bi-caret-down-fill"></i>
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            <!--    右邊9個商品列     -->
 
             <div class="product-set">
 
 
                 <ul>
-                    <li class="product-card">
+                    <li class="product-card-1">
                         <a href="product-dt.html">
-                            <img src="img/product280.png" alt="">
+                            <img src="img/300-1.png" alt="">
                             <h3>Soundcore Liberty Air 2 Pro</h3>
                             <div class="pd-card-bottom">
                                 <div>NT$2800</div>
@@ -170,18 +213,137 @@
                                     <i class="bi bi-heart"></i>
                                 </div>
                                 <div>
-                                    <i class="bi bi-credit-card-2-back"></i>
+                                    <i class="bi bi-cart-fill"></i>
                                 </div>
                             </div>
 
                         </a>
-                        
+
 
                     </li>
-                    <li class="product-card">
+                    <li class="product-card-1">
                         <a href="product-dt.html">
-                            <img src="img/product280.png" alt="">
-                            <h3>Soundcore Liberty Air 2 Pro</h3>
+                            <img src="img/300-2.png" alt="">
+                            <h3>Soundcore Motion+</h3>
+                            <div class="pd-card-bottom">
+                                <div>NT$2800</div>
+                                <div>
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </li>
+                    <li class="product-card-1">
+                        <a href="product-dt.html">
+                            <img src="img/300-3.png" alt="">
+                            <h3>Libratone Air Color 真無線藍牙耳機</h3>
+                            <div class="pd-card-bottom">
+                                <div>NT$2800</div>
+                                <div>
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </li>
+                    <li class="product-card-1">
+                        <a href="product-dt.html">
+                            <img src="img/300-4.png" alt="">
+                            <h3>Choetech Type-C to Type-C 充電線</h3>
+                            <div class="pd-card-bottom">
+                                <div>NT$2800</div>
+                                <div>
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </li>
+                    <li class="product-card-1">
+                        <a href="product-dt.html">
+                            <img src="img/300-5.png" alt="">
+                            <h3>Liberty 3 Pro</h3>
+                            <div class="pd-card-bottom">
+                                <div>NT$2800</div>
+                                <div>
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </li>
+                    <li class="product-card-1">
+                        <a href="product-dt.html">
+                            <img src="img/new1.png" alt="">
+                            <h3>Turtle Beach Stealth 600 Gen 2</h3>
+                            <div class="pd-card-bottom">
+                                <div>NT$2800</div>
+                                <div>
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </li>
+                    <li class="product-card-1">
+                        <a href="product-dt.html">
+                            <img src="img/new2.png" alt="">
+                            <h3>AUKEY Omnia Mix 65W PD快充充電器</h3>
+                            <div class="pd-card-bottom">
+                                <div>NT$2800</div>
+                                <div>
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </li>
+                    <li class="product-card-1">
+                        <a href="product-dt.html">
+                            <img src="img/new3.png" alt="">
+                            <h3>Turtle Beach Scout Air真無線藍牙耳機</h3>
+                            <div class="pd-card-bottom">
+                                <div>NT$2800</div>
+                                <div>
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div>
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </li>
+                    <li class="product-card-1">
+                        <a href="product-dt.html">
+                            <img src="img/new4.png" alt="">
+                            <h3>AUKEY Omnia Mix 65W PD快充充電器</h3>
                             <div class="pd-card-bottom">
                                 <div>NT$2800</div>
                                 <div>
@@ -192,155 +354,44 @@
                                 </div>
                             </div>
                         </a>
-                        
 
-                    </li>
-                    <li class="product-card">
-                        <a href="product-dt.html">
-                            <img src="img/product280.png" alt="">
-                            <h3>Soundcore Liberty Air 2 Pro</h3>
-                            <div class="pd-card-bottom">
-                                <div>NT$2800</div>
-                                <div>
-                                    <i class="bi bi-heart"></i>
-                                </div>
-                                <div>
-                                    <i class="bi bi-credit-card-2-back"></i>
-                                </div>
-                            </div>
-                        </a>
-                        
-
-                    </li>
-                    <li class="product-card">
-                        <a href="product-dt.html">
-                            <img src="img/product280.png" alt="">
-                            <h3>Soundcore Liberty Air 2 Pro</h3>
-                            <div class="pd-card-bottom">
-                                <div>NT$2800</div>
-                                <div>
-                                    <i class="bi bi-heart"></i>
-                                </div>
-                                <div>
-                                    <i class="bi bi-credit-card-2-back"></i>
-                                </div>
-                            </div>
-                        </a>
-                        
-
-                    </li>
-                    <li class="product-card">
-                        <a href="product-dt.html">
-                            <img src="img/product280.png" alt="">
-                            <h3>Soundcore Liberty Air 2 Pro</h3>
-                            <div class="pd-card-bottom">
-                                <div>NT$2800</div>
-                                <div>
-                                    <i class="bi bi-heart"></i>
-                                </div>
-                                <div>
-                                    <i class="bi bi-credit-card-2-back"></i>
-                                </div>
-                            </div>
-                        </a>
-                        
-
-                    </li>
-                    <li class="product-card">
-                        <a href="product-dt.html">
-                            <img src="img/product280.png" alt="">
-                            <h3>Soundcore Liberty Air 2 Pro</h3>
-                            <div class="pd-card-bottom">
-                                <div>NT$2800</div>
-                                <div>
-                                    <i class="bi bi-heart"></i>
-                                </div>
-                                <div>
-                                    <i class="bi bi-credit-card-2-back"></i>
-                                </div>
-                            </div>
-                        </a>
-                        
-
-                    </li>
-                    <li class="product-card">
-                        <a href="product-dt.html">
-                            <img src="img/product280.png" alt="">
-                            <h3>Soundcore Liberty Air 2 Pro</h3>
-                            <div class="pd-card-bottom">
-                                <div>NT$2800</div>
-                                <div>
-                                    <i class="bi bi-heart"></i>
-                                </div>
-                                <div>
-                                    <i class="bi bi-credit-card-2-back"></i>
-                                </div>
-                            </div>
-                        </a>
-                        
-
-                    </li>
-                    <li class="product-card">
-                        <a href="product-dt.html">
-                            <img src="img/product280.png" alt="">
-                            <h3>Soundcore Liberty Air 2 Pro</h3>
-                            <div class="pd-card-bottom">
-                                <div>NT$2800</div>
-                                <div>
-                                    <i class="bi bi-heart"></i>
-                                </div>
-                                <div>
-                                    <i class="bi bi-credit-card-2-back"></i>
-                                </div>
-                            </div>
-                        </a>
-                        
-
-                    </li>
-                    <li class="product-card">
-                        <a href="product-dt.html">
-                            <img src="img/product280.png" alt="">
-                            <h3>Soundcore Liberty Air 2 Pro </h3>
-                            <div class="pd-card-bottom">
-                                <div>NT$2800</div>
-                                <div>
-                                    <i class="bi bi-heart"></i>
-                                </div>
-                                <div>
-                                    <i class="bi bi-credit-card-2-back"></i>
-                                </div>
-                            </div>
-                        </a>
-                        
 
                     </li>
 
 
                 </ul>
 
-                <div class="page-main">
-                    <div class="page-set">
-                    
-                        <a href="#"><</a>
-                        <a href="#">1</a>
-                        <a href="#" class="active">2</a>
-                        <a href="#">3</a>
-                        <a href="#">></a>
-                    
-                    </div>
+                <!-- page -->
 
-                </div>
+                <ul class="pagination">
+                    <li>
+                      <a href="#"><i class="bi bi-chevron-double-left"></i></a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#"><i class="bi bi-chevron-double-right"></i></a>
+                    </li>
+                </ul>
 
             </div>
 
         </div>
+        
 
-       <!---------------gotop--------------->
+        
+
+        <!---------------gotop--------------->
         <button onClick="gotopfunction()" type="button" id="gotop">
             <i class="bi bi-arrow-up-circle"></i>
         </button>
 
     </div>
+
+    
 
 
 
@@ -353,13 +404,13 @@
                 <div class="logo-container">
 
 
-                    <img  class="footer_logo" src="img/logo2.png" alt="">
+                    <img class="footer_logo" src="img/logo2.png" alt="">
 
                     <ul>
 
                         <li class="btn1">
                             <i class="bi bi-whatsapp">
-                                +886-905242197
+                                0800-123-456
                             </i>
 
                         </li>
@@ -412,7 +463,6 @@
 
                 <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br>
                     若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>
-                    COPYRIGHT © 2022 EZ3C Co.,Ltd. All rights reserved.
                 </p>
 
             </div>
@@ -428,13 +478,58 @@
         AOS.init();
     </script>
     <script>
-           // 點擊回頂
-           $(document).ready(function () {
+        // gotop
+        // 滾動事件顯現
+        var gotop_btn = document.getElementById("gotop");
+        window.onscroll = function () {
+            scrollfunction();
+        };
+
+        function scrollfunction() {
+            if (
+                document.body.scrollTop > 100 ||
+                document.documentElement.scrollTop > 100
+            ) {
+                gotop_btn.style.display = "block";
+            } else {
+                gotop_btn.style.display = "none";
+            }
+        }
+
+
+        // 點擊回頂
+        $(document).ready(function () {
             $(`#gotop`).click(function (e) {
                 // e.preventDefault();
                 $(`html,body`).animate({ scrollTop: 0 }, 900);
             });
         });
+
+        // category-hide&show
+        let category_link = document.getElementsByClassName("category-links");
+        let category_ct = document.getElementsByClassName("category-content");
+        // console.log(category_link);
+
+        for (let i = 0; i < category_link.length; i++) {
+            category_link[i].addEventListener("click", function (e) {
+                e.preventDefault();
+                let x = document.getElementsByClassName("bi-plus");
+                let y = document.getElementsByClassName("bi-dash");
+                if (category_ct[i].style.display == "block") {
+                    category_ct[i].style.display = "none";
+                    x[i].style.display = "block";
+                    y[i].style.display = "none";
+                } else {
+                    category_ct[i].style.display = "block";
+                    x[i].style.display = "none";
+                    y[i].style.display = "block";
+                }
+            });
+        }
+
+
+
+
     </script>
 
 

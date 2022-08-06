@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sign-in.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
-    <title>info</title>
+    <title>register</title>
 </head>
 <body>
 
@@ -99,7 +100,8 @@
                 </ul>
                 
             </section>
-              <!---------------three icon ---------------->
+
+            <!---------------three icon ---------------->
             <ul class="hn-function flex-cc">
                 <li class="hn-search">
                     <form action="#" class="desktop-search">
@@ -118,7 +120,7 @@
                 </li>
 
                 <li>
-                    <a href="sign-in.html" class="btn-default">
+                    <a href="#" class="btn-default">
                     <i class="bi bi-person"></i>
                     </a>
                 </li>
@@ -126,122 +128,65 @@
         </div>
     </nav>
 
-<!--    banner看板     -->
-    <div class="wrapper-promo">
-        
-        <div class="banner">
-            <img src="img/banner4.jpg" alt="">
-
-        </div>
-
-    </div>
     
+       
 
+        <!-- 註冊帳號 -->
 
-    <div class="product-container">
-        <div class="info-side">
-            <a href="index.html">首頁</a>
-            <i class="bi bi-chevron-right"></i>
-            <span>購物說明</span>
-    
-        </div>
-        <div class="product-list">
-            
-            <div class="side-left">
-
-                <div class="side-pd">
-                    <!--    左邊icon區域     -->
-                    <ul>
-                        <li >
-                            <i class="bi bi-coin" style="color: #0078E9"></i>
-                            <a href="" style="color: #0078E9">
-                                付費方式
-                            </a>
-
-                        </li>
-                        <li>
-                            <i class="bi bi-truck"></i>
-                            <a href="">運送方式</a>
-
-                        </li>
-                        <li>
-                            <i class="bi bi-bag-heart-fill"></i>
-                            <a href="">退換或方式</a>
-
-                        </li>
-                        <li>
-                            <i class="bi bi-people-fill"></i>
-                            <a href="">會員權益</a>
-
-                        </li>
-
-                        
-                    </ul>
-
+        <div class="register-page">
+            <div class="register-section">
+                <div class="main-register-content">
+                    <form action="javascript:void(0)" id="memRegister" class="user-register-input">
+                        <div class="register-title">
+                            <h1>註冊帳號</h1>
+                        </div>
+                        <div class="register-account-part">
+                            <label for="user-register">帳號</label>
+                            <input type="text" name="register-account" id="user-register">
+                            <p id="register-account-tips">請輸入電子郵件或電話號碼</p>
+                        </div>
+                        <div class="register-password-part">
+                            <label for="password-register">密碼</label>
+                            <input type="password" name="register-password" id="password-register" maxlength="25" minlength="8">
+                            <p id="register-password-tips">密碼為8-25個字元，大小寫不同</p>
+                        </div>
+                        <div class="password-confirm-part">
+                            <label for="password-confirm">確認密碼</label>
+                            <input type="password" name="confirm-password" id="password-confirm" maxlength="25" minlength="8">
+                            <span id="confirm-id"></span>
+                        </div>
+                        <div class="privacy-term">
+                            <label for="privacy">
+                                <input type="checkbox" name="privacy" id="privacy">
+                                <span class="privacy-checkmark"></span>
+                                <span>同意EZ 3C 隱私條款</span>
+                            </label>
+                        </div>
+                        <div class="register-button">
+                            <button type="submit" class="register-btn">送出</button>
+                        </div>
+                        <p class="switch-login">
+                            <span>已有帳號了?</span>
+                            <a href="sign-in.html">登入</a>
+                        </p>
+                    </form>
                 </div>
-               
-            
             </div>
-
-
-
-            <div class="info-set">
-
-                
-                    <ul>
-                        <li>
-                            <div class="info-bottomline">
-                                <h1>付費方式</h1>
-
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <h2>信用卡即時線上一次刷卡付款</h2>
-                            <h3>方便又好用的付款方式，當您選擇線上刷卡方式進行交易時，作業流程透過SSL加密機制，保障您的個人隱私資料。</h3>
-                            
-                        </li>
-                        <li>
-                            <h2>超商付款取貨</h2>
-                            <h3>適合不方便在家收貨或者不方便使用ATM與無信用卡的消費者。</h3>
-                            
-                        </li>
-                        <li>
-                            <h2>ATM付款</h2>
-                            <h3>適用沒有信用卡或者不方便前往超商取貨付款的消費者。使用ATM付款方式只需將訂單款項透過實體/網路ATM或者網路銀行直接匯入系統指定帳號即可完成付款。</h3>
-                            
-                        </li>
-                        <li>
-                            <h2>LINE Pay</h2>
-                            <h3>付款不需輸入信用卡資訊及3D驗證，僅需輸入專屬密碼即可使用信用卡進行付款，節省您的付款時間。 /網路ATM或者網路銀行直接匯入系統指定帳號即可完成付款。</h3>
-                            
-                        </li>
-                        <li>
-                            <h2>街口支付</h2>
-                            <h3>請先備妥您行動裝置中的街口支付應用程式，可使用街口儲值帳戶/銀行帳戶，並搭配街口幣進行付款。</h3>
-                            
-                        </li>
-    
-                      
-                    </ul>
-
-        
-
-            </div>
-
         </div>
-        
 
-    </div>
+
+
     
 
 
- <!--          footer區    -->
+
+
+ <!-------footer區------->
  <footer>
     <div class="container_footer">
         <div class="footer-area">
 
-            <!-- ----------  footer 左邊logo區 ----------   -->
+            <!------------footer 左邊logo區 ---------- -->
 
             <div class="logo-container">
 
@@ -272,7 +217,7 @@
                 </ul>
 
             </div>
-            <!--  ----------footer 右邊info區 ----------   -->
+            <!------------footer 右邊info區--------- -->
 
             <div class="info-right">
 
@@ -313,7 +258,93 @@
     </div>
 
 </footer>
+
 <script src="js/rwd.js"></script>
+
+<script>
+
+  function $id(id) {
+    return document.getElementById(id);
+}
+
+function registerForm(e) {
+    let newAccount = $id("user-register");
+    let newPassword = $id("password-register");
+    let confirmPassword = $id("password-confirm");
+
+    // 檢查帳號和密碼欄位是否空白
+    if (newAccount.value == "" || newPassword.value == "" || confirmPassword.value == "") {
+        alert("帳號、密碼與確認密碼欄位不得空白");
+        e.preventDefault();
+        return;
+    }
+
+    let accountReg = /(^09\d{8}$)|(^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$)/; //email或手機號碼的正規表達式
+    let passwordReg = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/; //密碼的正規表達式
+    let AccountValid = accountReg.test(newAccount.value); //帳號過
+    let PasswordValid = passwordReg.test(newPassword.value); //密碼過
+    let confirmId = newPassword.value; //確認密碼
+
+    console.log("帳號", AccountValid);
+    console.log("密碼", PasswordValid);
+    console.log("確認密碼", confirmId);
+
+    // 帳號驗證
+    if (newAccount.value.search(accountReg) == -1) {
+        document.getElementById("register-account-tips").innerText = "帳號格式錯誤";
+        document.getElementById("register-account-tips").style.color = "red";
+        newAccount.value = "";
+        newAccount.focus();
+        e.preventDefault();
+    } else {
+        document.getElementById("register-account-tips").style.display = "none";
+    }
+
+    // 密碼驗證
+    if (newPassword.value.search(passwordReg) == -1) {
+        document.getElementById("register-password-tips").innerText = "密碼長度為8~25字元且包含英文大小寫及數字";
+        document.getElementById("register-password-tips").style.color = "red";
+        newPassword.value = "";
+        newPassword.select();
+        e.preventDefault();
+    } else {
+        document.getElementById("register-password-tips").style.display = "none";
+    }
+
+    // 確認密碼驗證
+    if (confirmPassword.value != newPassword.value) {
+        document.getElementById("confirm-id").innerText = "確認密碼錯誤";
+        document.getElementById("confirm-id").style.color = "red";
+        confirmPassword.value = "";
+        confirmPassword.select();
+        e.preventDefault();
+    } else {
+        document.getElementById("confirm-id").style.display = "none";
+    }
+
+
+    // 隱私條款打勾驗證
+    let privacyTick = $id("privacy");
+    // privacyTick.type == "checkbox";
+    if (privacyTick.checked == false) {
+        console.log(privacyTick.checked);
+        alert("請勾選同意隱私條款");
+    }
+
+
+
+    // 如果帳號、密碼、確認密碼和隱私條款都驗證通過，就跳轉到首頁
+    if (AccountValid && PasswordValid && confirmPassword.value == newPassword.value && privacyTick.checked == true) {
+        alert("恭喜註冊成功!!!");
+        return window.location.replace('index.html');
+    };
+}
+
+
+window.addEventListener("load", function() {
+    document.getElementById("memRegister").onsubmit = registerForm;
+});
+</script>
 
 
     

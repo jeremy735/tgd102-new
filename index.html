@@ -41,9 +41,15 @@
             <section class="nav">
 
                 <ul class="nav-ul">
+                    <div class="search-function">
+                        <i class="bi bi-search "></i>
+                        <input type="search" placeholder="搜尋EZ.3C.com" id="user-search">
+                    </div>
                     <li class="nav-item"><a href="promo.html">優惠活動</a></li>
 
                     <li class="nav-item">
+
+                        
                         <a href="product.html">找產品</a>
                         <div class="hn-list-item hn-list-model">
 
@@ -66,11 +72,35 @@
                                 </li>
                             </ul>
 
-
                         </div>
                     </li>
 
-                    <li class="nav-item"><a href="info.html">購物說明</a></li>
+                    <li class="nav-item">
+                        <a href="info.html">購物說明</a>
+                        <div class="hn-list-item hn-list-model">
+
+                            <ul class="hn-list-model-item">
+                                <li>
+                                    <a href="info.html">付費方式</a>
+
+                                </li>
+                                <li>
+                                    <a href="info.html">運送方式</a>
+
+                                </li>
+                                <li>
+                                    <a href="info.html">退換或方式</a>
+
+                                </li>
+                                <li>
+                                    <a href="info.html">會員權益</a>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </li>
 
                     <li class="nav-item"><a href="location.html">聯絡我們</a></li>
 
@@ -97,7 +127,7 @@
                 </li>
 
                 <li>
-                    <a href="#" class="btn-default">
+                    <a href="sign-in.html" class="btn-default">
                     <i class="bi bi-person"></i>
                     </a>
                 </li>
@@ -201,7 +231,7 @@
                     <li class="banner-product-bestSeller-one">
                         <img src="img/new4.png" alt="" >
                         <h3>AUKEY Omnia Mix 65W PD快充充電器</h3>
-                        <p>NT$4500</p>
+                        <p>NT$450</p>
                         <a class="newproduct-button" href="product-dt.html">立即搶購</a>
                         <div class="banner-product-bestSeller-middle">
                             <a href="product-dt.html">
@@ -453,7 +483,7 @@
 
                         <li class="btn1">
                             <i class="bi bi-whatsapp">
-                                +886-905242197
+                                0800-123-456
                             </i>
 
                         </li>
@@ -506,7 +536,6 @@
 
                 <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br>
                     若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>
-                    COPYRIGHT © 2022 EZ3C Co.,Ltd. All rights reserved.
                 </p>
 
             </div>
@@ -566,13 +595,33 @@
         })
 
 
+
+        // gotop
+        // 滾動事件顯現
+        var gotop_btn = document.getElementById("gotop");
+        window.onscroll = function () {
+            scrollfunction();
+            };
+
+            function scrollfunction() {
+            if (
+                document.body.scrollTop > 100 ||
+                document.documentElement.scrollTop > 100
+            ) {
+                gotop_btn.style.display = "block";
+            } else {
+                gotop_btn.style.display = "none";
+            }
+        }
+
+
         // 點擊回頂
-            $(document).ready(function () {
-                $(`#gotop`).click(function (e) {
-                    // e.preventDefault();
-                    $(`html,body`).animate({ scrollTop: 0 }, 900);
-                });
+        $(document).ready(function () {
+            $(`#gotop`).click(function (e) {
+                // e.preventDefault();
+                $(`html,body`).animate({ scrollTop: 0 }, 900);
             });
+        });
 
 
     </script>

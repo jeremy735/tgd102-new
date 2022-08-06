@@ -1,0 +1,568 @@
+/* 登入帳號 */
+
+.login-page {
+    width: 100%;
+}
+
+.login-page .login-section {
+    max-width: 800px;
+    margin: 30px auto 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.main-login-content {
+    width: 640px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+}
+
+
+
+/* 登入帳號---右半部 */
+
+
+.right-content .login-title {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+.right-content{
+    width: 100%;
+}
+
+
+/* 帳號 */
+
+.input-account {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-account #user-account {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    
+}
+
+.input-account p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #686868;
+    letter-spacing: 0.03cm;
+}
+
+
+/* 密碼 */
+
+.input-password {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.input-password #user-password {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    
+}
+
+.input-password p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #686868;
+    letter-spacing: 0.03cm;
+}
+
+
+/* 記住帳號密碼 */
+
+.remember-forget {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-forget label {
+    padding-left: 24px;
+    position: relative;
+    font-size: 0.9375rem;
+    cursor: pointer;
+}
+
+#remember {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+/* 勾勾的框 */
+
+.account-checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    border: 1px solid #4d4d4d;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* 勾勾 */
+
+.account-checkmark::before {
+    content: "";
+    left: 6px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    display: none;
+}
+
+
+/* 勾勾點擊後的背景色 */
+
+.remember-forget input:checked+.account-checkmark {
+    background-color: #3681FF;
+}
+
+
+/* 勾勾點擊後出現 */
+
+.remember-forget input:checked+.account-checkmark::before {
+    display: block;
+}
+
+.remember-forget .forget-password a {
+    text-decoration: none;
+    color: #3681FF;
+}
+
+
+/* 登入按鈕 */
+
+.login-button {
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.login-button .login-btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #3681FF;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.login-button .login-btn:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+
+/* 註冊帳號 */
+
+.register-member {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.register-member span {
+    font-size: 0.9375rem;
+    color: #686868;
+}
+
+.register-member a {
+    text-decoration: none;
+    font-size: 0.9375rem;
+    padding-left: 5px;
+    color: #3681FF;
+}
+
+
+/* 使用其他方式登入 */
+
+.use-other-login {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+}
+
+.use-other-login::before {
+    content: '';
+    width: 30%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border-top: 1px dashed #838383;
+}
+
+.use-other-login::after {
+    content: '';
+    width: 30%;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border-top: 1px dashed #838383;
+}
+
+
+/* facebook、google、line */
+
+.other-login-method {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+.bi-facebook{
+    font-size: 1.6rem; 
+}
+
+.bi-google{
+    font-size: 1.6rem;  
+}
+
+.bi-line{
+    font-size: 1.6rem;
+}
+
+
+/* ---------------------------------------------- */
+
+
+/* 註冊帳號 */
+
+.register-page {
+    width: 100%;
+}
+
+.register-section {
+    max-width: 800px;
+    margin: 30px auto 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.main-register-content {
+    width: 640px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+}
+
+.user-register-input {
+    width: 100%;
+}
+
+.register-title h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* 註冊帳號-輸入帳號部分 */
+
+.register-account-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-account-part #user-register {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    
+}
+
+.register-account-part p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #686868;
+    letter-spacing: 0.03cm;
+}
+
+
+/* 註冊密碼 */
+
+.register-password-part {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.register-password-part #password-register {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    
+}
+
+.register-password-part p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #686868;
+    letter-spacing: 0.03cm;
+}
+
+
+/* 確認密碼 */
+
+.password-confirm-part {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+#password-confirm {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    
+}
+
+#confirm-id {
+    font-size: 0.75rem;
+    padding-top: 5px;
+}
+
+
+/* 同意隱私條款 */
+
+.privacy-term {
+    padding-top: 10px;
+}
+
+.privacy-term label {
+    padding-left: 24px;
+    position: relative;
+    font-size: 0.9375rem;
+    cursor: pointer;
+}
+
+#privacy {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+/* 勾勾的框 */
+
+.privacy-checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    border: 1px solid #4d4d4d;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* 勾勾 */
+
+.privacy-checkmark::before {
+    content: "";
+    left: 6px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    display: none;
+}
+
+
+/* 勾勾點擊後的背景色 */
+
+.privacy-term input:checked+.privacy-checkmark {
+    background-color: #3681FF;
+}
+
+
+/* 勾勾點擊後出現 */
+
+.privacy-term input:checked+.privacy-checkmark::before {
+    display: block;
+}
+
+
+/* 註冊按鈕 */
+
+.register-button {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.register-button .register-btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #3681FF;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.register-button .register-btn:hover {
+    background-color: rgb(7, 68, 224);
+}
+
+
+/* 已有帳號，使用帳號登入 */
+
+.switch-login {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.switch-login span {
+    font-size: 0.9375rem;
+    color: #686868;
+}
+
+.switch-login a {
+    text-decoration: none;
+    font-size: 0.9375rem;
+    padding-left: 5px;
+    color: #3681FF;
+}
+
+
+/* -------------------------------------------- */
+
+@media screen and (max-width: 415px){
+
+/* 登入頁面 */
+.login-page .login-section {
+    width: 85%;
+    margin: 100px auto 50px;
+    box-sizing: border-box;
+}
+
+.main-login-content {
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#memLogin{
+    box-sizing: border-box;
+}
+.input-account{
+    box-sizing: border-box;
+    align-items: center;
+}
+.input-account #user-account{
+    width: 85%;
+}
+.input-password{
+    box-sizing: border-box;
+    align-items: center;
+}
+.input-password #user-password{
+    width: 85%;
+}
+.login-button{
+    box-sizing: border-box;
+}
+.login-button .login-btn{
+    width: 85%;
+}
+#remember{
+    appearance: none;
+}
+.remember-forget{
+    padding: 6px 27px;
+}
+
+/* 註冊帳號頁面 */
+
+.register-section {
+    width: 85%;
+    margin: 100px auto 50px;
+    box-sizing: border-box;
+}
+.main-register-content{
+    box-sizing: border-box;
+}
+.user-register-input{
+    box-sizing: border-box;
+}
+.register-account-part, .register-password-part, .password-confirm-part, .register-button{
+    box-sizing: border-box;
+    align-items: center;
+}
+.register-account-part #user-register{
+    width: 85%;
+}
+.register-password-part #password-register{
+    width: 85%;
+}
+#password-confirm{
+    width: 85%;
+}
+.register-button .register-btn{
+    width: 85%;
+}
+#privacy{
+    appearance: none;
+}
+
+.privacy-term{
+    text-align: center;
+}
+
+.use-other-login::before {
+    display: none;
+}
+.use-other-login::after{
+    display: none;
+} 
+
+
+}
