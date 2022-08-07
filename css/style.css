@@ -1212,6 +1212,7 @@ textarea {
 	margin: 40px auto;
 	display: flex;
 	box-sizing: border-box;
+	
     padding: 0 20px;
 }
 
@@ -1584,13 +1585,14 @@ main .banner-product-bestSeller-middle a i {}
 
 .banner-product-bestSeller li {
 	padding: 0 5px;
-	width: 250px;
+	width: 145px;
+	
 
 }
 
 /* ---------------商品內文區 rwd --------- */
 
-@media screen and (max-width: 418px){
+@media screen and (max-width: 415px){
 
 	.pdinfo-container{
 		width: 100%;
@@ -1652,7 +1654,7 @@ main .banner-product-bestSeller-middle a i {}
 	.banner-product-bestSeller li{
 		max-width: 180px;
 		padding: 0px;
-		margin: 10px 0px;
+		margin: 10px 5px;
 	}
 	
 	
