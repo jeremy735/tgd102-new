@@ -11,7 +11,7 @@ h1 {
 	font-style: normal;
 	font-size: 36px;
 	text-align: center;
-	margin: 50px auto;
+	margin: 60px auto;
 
 }
 
@@ -490,7 +490,7 @@ h1 {
 
 /* -----------最右邊上拉室按鈕-------------- */
 
-.bi-arrow-up-circle {
+.bi-arrow-up-circle-fill {
 	font-size: 40px;
 	position: fixed;
 	right: 10px;
@@ -500,7 +500,7 @@ h1 {
 }
 
 @media screen and (max-width: 415px){
- .bi-arrow-up-circle{
+ .bi-arrow-up-circle-fill{
 	display: none;
  }
 
