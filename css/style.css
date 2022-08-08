@@ -1227,6 +1227,9 @@ textarea {
 
 .pd-leftimg {
 	width: 100%;
+	padding: 10px;
+
+
 
 }
 
@@ -1604,6 +1607,12 @@ main .banner-product-bestSeller-middle a i {}
 		flex-wrap: wrap;
 		flex-direction: column;
 
+	}
+	.pd-leftimg ul{
+		width: 100%;
+	}
+	.big img{
+		width: 100%;
 	}
 
 	.buy-button{
